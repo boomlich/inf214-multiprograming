@@ -1,4 +1,4 @@
-package basics.vid0;
+package videoes.vid0;
 
 public class JavaThreads {
 

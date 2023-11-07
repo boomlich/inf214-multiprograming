@@ -1,5 +1,7 @@
 package algorithms.sort;
 
+import util.Generator;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +11,6 @@ public class Main {
     public static DecimalFormat formatter = new DecimalFormat("#, ###");
 
     public static void main(String[] args) {
-
         List<Sorting> algorithmList = new ArrayList<>();
         algorithmList.add(new QuickSort());
         algorithmList.add(new QuickSortParallel());
@@ -23,13 +24,6 @@ public class Main {
             runAlgorithms(algorithmList, integerLists);
             listSize*=10;
         }
-
-//        List<Integer> list = Generator.generateList(500, 0, 1000);
-//        QuickSortParallell qsp = new QuickSortParallell();
-//        List<Integer> result = qsp.sort(list);
-//
-//        System.out.println("Before: " + list);
-//        System.out.println("After:  " + result);
     }
 
     private static List<List<Integer>> generateNLists(int n, int listSize) {

@@ -1,4 +1,4 @@
-package basics.vid1;
+package videoes.vid1;
 
 public class Main {
 
